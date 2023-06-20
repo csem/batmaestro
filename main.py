@@ -117,19 +117,19 @@ def run_optim_batt_soh(
 
 def test_batt_simple_soh():
     '''Test battery degradation with simple model of SoH, no SoR'''
-    cost, gap = run_optim_batt_soh(True, False, False)
+    cost, gap = run_optim_batt_soh(True, False)
     # expected_cost = -1.8486
     # assert np.isclose(cost, expected_cost, rtol = gap)
 
 def test_batt_complex_soh():
     '''Test battery degradation with complex model of SoH, no SoR'''
-    cost, gap = run_optim_batt_soh(True, True, False)
+    cost, gap = run_optim_batt_soh(True, True)
     # expected_cost = -1.4932
     # assert np.isclose(cost, expected_cost, rtol = gap)
     
 def test_batt_complex_soh_sor():
     '''Test battery degradation with complex model of SoH and of SoR'''
-    cost, gap = run_optim_batt_soh(True, True, True)
+    cost, gap = run_optim_batt_soh(True, True)
     # expected_cost = -1.3039
     # assert np.isclose(cost, expected_cost, rtol = gap)
 

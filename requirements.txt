@@ -1,0 +1,5 @@
+matplotlib>=3.2.0
+networkx==2.4
+numpy==1.24.2
+pandas==1.5.3
+PuLP>=2.4
